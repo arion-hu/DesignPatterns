@@ -2,10 +2,14 @@
 //
 
 #include <iostream>
+#include "Singleton.h"
+
+Singleton::GC Singleton::GC::gc;
 
 int main()
 {
-    
+	Singleton* Instance = Singleton::GetInstance();
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
